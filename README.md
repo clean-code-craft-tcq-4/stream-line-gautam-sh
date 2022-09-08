@@ -7,7 +7,7 @@ This project is about sending and receiving BMS data.
 ### Build instructions
 To build the program from terminal,
 
-`g++ -o testsender sender/src/*.cpp* sender/tests/*.hpp* -I sender/include/`
+`g++ -o testsender sender/src/*.cpp* sender/test/*.hpp* -I sender/include/`
 
 ### Run instructions
 The program uses additional arguements to either run or test the program.

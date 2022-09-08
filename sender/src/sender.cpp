@@ -1,5 +1,5 @@
 #include "generic_sensor.hpp"
-#include "../tests/test_sender.hpp"
+#include "../test/test_sender.hpp"
 #include <iostream>
 
 int main(int argc, char *argv[])
