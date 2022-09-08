@@ -5,7 +5,7 @@
 int main(int argc, char *argv[])
 {
 
-    if (std::string(argv[1]) == "test")
+    if (argc > 1 && std::string(argv[1]) == "test")
         test_data_generation();
 
     else
