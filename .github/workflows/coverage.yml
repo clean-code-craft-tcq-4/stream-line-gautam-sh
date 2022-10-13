@@ -18,8 +18,11 @@ jobs:
     - name: build
       run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testsender sender/test/*.hpp* sender/src/*.cpp* -I sender/include/
       
+    - name: build receiver
+      run: g++ -Wall -Wextra -fprofile-arcs -ftest-coverage -o testreceiver receiver/test/*.hpp* receiver/src/*.cpp* -I receiver/include/
+      
     - name: run
-      run: ./testsender
+      run: ./testsender | ./testreceiver
 
     - name: collect coverage
       run: gcovr --gcov-exclude=".*test.*" -r . --html --html-details -o coverage.html --print-summary
