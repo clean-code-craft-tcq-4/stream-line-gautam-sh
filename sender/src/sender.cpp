@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < 50; ++i)
     {
         temperature_sensor.generateData(min_temperature, max_temperature);
-        std::cout << "Temperature = ";
+        //std::cout << "Temperature = ";
         temperature_sensor.sendData();
     }
 
@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
     for (int i = 0; i < 50; ++i)
     {
         SoC_sensor.generateData(min_soc, max_soc);
-        std::cout << "SoC = ";
+        //std::cout << "SoC = ";
         SoC_sensor.sendData();
     }
 }
