@@ -20,3 +20,14 @@ void Statistics::addAvrValue(double value)
    }
    avr_queue.push(value);
 }
+
+double Statistics::getAvrValue()
+{
+   double sum = 0;
+   while(avr_queue.size())
+   {
+      sum += avr_queue.front();
+      avr_queue.pop();
+   }
+   return sum/AVERAGE_QUEUE_SIZE
+}
