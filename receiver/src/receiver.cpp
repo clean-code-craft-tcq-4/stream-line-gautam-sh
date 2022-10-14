@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
 
-double calculate_average(std::queue<double> input_queue)
+double calculate_average(std::queue<double>& input_queue)
 {
    double queue_sum = 0;
    double queue_size = input_queue.size();
@@ -9,6 +9,7 @@ double calculate_average(std::queue<double> input_queue)
    {
       std::cout << input_queue.front() << std::endl;
       queue_sum += input_queue.front();
+      input_queue.pop();
    }
    return queue_sum/queue_size;
 }
@@ -43,6 +44,6 @@ int main(int argc, char *argv[])
    std::cout << "Minimum value: " << min_value << std::endl;
    std::cout << "Maximum value: " << max_value << std::endl;
    std::cout << "Maximum value: " << max_value << std::endl;
-   std::cout << "Simple Moving Average of last 5 values: " << average_queue.size() << std::endl;
+   std::cout << "Simple Moving Average of last 5 values: " << calculate_average(average_queue) << std::endl;
    return 0;
 }
