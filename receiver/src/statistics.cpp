@@ -29,5 +29,5 @@ double Statistics::getAvrValue()
       sum += avr_queue.front();
       avr_queue.pop();
    }
-   return sum/AVERAGE_QUEUE_SIZE
+   return sum/AVERAGE_QUEUE_SIZE;
 }
