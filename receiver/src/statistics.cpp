@@ -14,7 +14,7 @@ void Statistics::checkMaxValue(double value)
 
 void Statistics::addAvrValue(double value)
 {
-   if(avr_queue.size() >= DEFAULT_QUEUE_SIZE)
+   if(avr_queue.size() >= AVERAGE_QUEUE_SIZE)
    {
       avr_queue.pop();
    }
