@@ -1,7 +1,7 @@
 #include <iostream>
 #include <queue>
 
-double calculate_average(std::queue<double>& input_queue)
+double calculate_average(std::queue<double> input_queue)
 {
    double queue_sum = 0;
    double queue_size = input_queue.size();
