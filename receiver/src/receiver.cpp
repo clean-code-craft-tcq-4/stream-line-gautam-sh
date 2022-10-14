@@ -12,7 +12,7 @@ int main(int argc, char *argv[])
       if(is_first_value)
       {
          min_value = current_value;
-         max-value = current_value;
+         max_value = current_value;
          is_first_value = false;
       }
       if(min_value > current_value)
