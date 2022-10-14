@@ -1,5 +1,11 @@
 #include "statistics.hpp"
 
+void Statistics::init(double value)
+{
+   min_value = value;
+   max_value = value;
+}
+
 void Statistics::checkMinValue(double value)
 {
    if(min_value > value)
