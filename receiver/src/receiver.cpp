@@ -2,8 +2,18 @@
 
 int main(int argc, char *argv[])
 {
-   double data;
-   while (std::cin >> data)
-      std::cout << data << std::endl;
+   double current_value = 0;
+   double min_value = 0;
+   double max_value = 0;
+   while (std::cin >> current_value)
+   {
+      std::cout << current_value << std::endl;
+      if(min_value > current_value)
+         min_value = current_value;
+      if(max_value < current_value)
+         max_value = current_value;
+   }
+   std::cout << "Minimum data" << min_value << std::endl;
+   std::cout << "Maximum value" << max_value << std::endl;
    return 0;
 }
