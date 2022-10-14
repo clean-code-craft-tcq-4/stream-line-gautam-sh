@@ -2,6 +2,8 @@
 
 int main(int argc, char *argv[])
 {
-   std::cout << "test";
+   double sensor_data;
+   std::cin >> sensor_data;
+   std::cout << sensor_data;
    return 0;
 }
