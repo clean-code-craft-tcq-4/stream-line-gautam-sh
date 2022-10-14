@@ -2,7 +2,8 @@
 
 int main(int argc, char *argv[])
 {
-   char c;
-   while (std::cin >> c) std::cout << c;
+   double data;
+   while (std::cin >> data)
+      std::cout << data << std::endl;
    return 0;
 }
