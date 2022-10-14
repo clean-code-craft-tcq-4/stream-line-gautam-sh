@@ -8,9 +8,9 @@ const double AVERAGE_QUEUE_SIZE = 5;
 class Statistics
 {
 public:
-  Statistics();
-  virtual ~Statistics();
-  void addValue(double value);
+  void checkMinValue(double value);
+  void checkMaxValue(double value);
+  void addAvrValue(double value);
   double getMinValue(){return min_value;}
   double getMaxValue(){return max_value;}
   double getAvrValue(){return avr_value;}
