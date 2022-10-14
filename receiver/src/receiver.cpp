@@ -43,6 +43,6 @@ int main(int argc, char *argv[])
    std::cout << "Minimum value: " << min_value << std::endl;
    std::cout << "Maximum value: " << max_value << std::endl;
    std::cout << "Maximum value: " << max_value << std::endl;
-   std::cout << "Simple Moving Average of last 5 values: " << calculate_average(average_queue) << std::endl;
+   //std::cout << "Simple Moving Average of last 5 values: " << calculate_average(average_queue) << std::endl;
    return 0;
 }
