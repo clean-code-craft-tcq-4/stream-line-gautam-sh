@@ -8,18 +8,20 @@ This project is about sending and receiving BMS data.
 To build the program from terminal,
 
 `g++ -o testsender sender/src/*.cpp* sender/test/*.hpp* -I sender/include/`
+
 `g++ -o testreceiver receiver/src/*.cpp* receiver/test/*.hpp* -I receiver/include/`
 
 ### Run instructions
 The program uses additional arguements to either run or test the program.
 To generate and send data on the console i.e. to run the program, from the terminal
 
-`./testsender || ./testreceiver`
+`./testsender | ./testreceiver`
 
 ### Test instructions
 To run the test cases i.e. to test the program,
 
 `./testsender test`
+
 `./testreceiver test`
 
 ## Decomposition
