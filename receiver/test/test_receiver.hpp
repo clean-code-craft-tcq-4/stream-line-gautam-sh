@@ -4,6 +4,8 @@
 
 void test_statistics()
 {
+   double current_value = 0;
+   bool is_first_value = true;
    Statistics statistics;
    double test_data[10] = {0, 2, 4, 6, 8, 1, 3, 5, 7, 9};
    for (int i = 0; i < sizeof(test_data)/sizeof(test_data[0]); i++)
