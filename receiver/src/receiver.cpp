@@ -1,9 +1,19 @@
 #include <iostream>
 #include <queue>
 #include "statistics.hpp"
+#include "../test/test_receiver.hpp"
 
 int main(int argc, char *argv[])
 {
+   if (argc > 1)
+   {
+      if(argv[1] == 'test')
+      {
+         test_statistics();
+      }
+      return 0;
+   }
+   
    double current_value = 0;
    bool is_first_value = true;
    Statistics statistics;
