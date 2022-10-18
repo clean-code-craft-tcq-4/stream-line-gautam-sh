@@ -2,9 +2,8 @@
 #include <assert.h>
 #include <iostream>
 
-void test_data_generation()
+void test_receiver()
 {
 
-
-    std::cout << "All tests passed successfully.\n";
+   std::cout << "All tests passed successfully.\n";
 }
